@@ -1,0 +1,16 @@
+{
+  "name": "thrive",
+  "version": "1.0.0",
+  "description": "Thrive demo on Render",
+  "main": "app.js",
+  "repository": "https://github.com/jambione/thrive",
+  "author": "Jambione <<EMAIL>>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.0.0"
+  }
+}
