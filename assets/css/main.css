@@ -3907,6 +3907,26 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: center;
 }
 
+.quoted {
+  font-weight: bold;
+  display: block;
+}
+
+.quoted-author {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center !important;
+}
+
+.quoted-author-title {
+  font-weight: normal;
+  font-style: italic;
+  display: inline;
+}
+.recommendations {
+  text-align: left !important;
+}
+
 #main > .post {
   padding: 8rem 8rem 6rem 8rem;
 }
@@ -3985,12 +4005,18 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > .posts > * {
-  width: 50%;
+  width: 100%;
+}
+
+#main > .posts-fullwidth > * {
+  padding: 4rem;
+  width: 100%;
+  border-bottom: #b3b7bb 1px solid;
 }
 
 #main > .posts > * {
   padding: 4rem;
-  width: 50%;
+  width: 100%;
 }
 
 #main > .posts > article {
@@ -4015,12 +4041,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 @media screen and (max-width: 980px) {
   #main > .posts > * {
-    width: 50%;
+    width: 100%;
   }
 
   #main > .posts > * {
     padding: 2.5rem;
-    width: 50%;
+    width: 100%;
   }
 }
 
