@@ -3927,6 +3927,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: left !important;
 }
 
+.responsive-image {
+  max-width: 100%; /* This ensures the image never exceeds its container's width */
+  height: auto; /* This maintains the aspect ratio */
+  display: block; /* This removes any space below the image that's due to it being an inline-block element */
+}
+
 #main > .post {
   padding: 8rem 8rem 6rem 8rem;
 }
