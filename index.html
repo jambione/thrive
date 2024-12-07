@@ -1,17 +1,475 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
   <head>
-    <title>Thrive</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      img:is([sizes="auto" i], [sizes^="auto," i]) {
+        contain-intrinsic-size: 3000px 1500px;
+      }
+    </style>
+
+    <!-- This site is optimized with the Yoast SEO plugin v23.9 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>Thrive in Ministry - Churches, Pastors, Families</title>
+
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//code.ionicframework.com" />
+
+    <link
+      rel="stylesheet"
+      id="maker-pro-css"
+      href="https://pastorgetaways.com/wp-content/themes/maker-pro/style.css?ver=1.0.1"
+      type="text/css"
+      media="all"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
-    <link rel="pingback" href="https://pastorgetaways.com/xmlrpc.php" />
+    <style id="maker-pro-inline-css" type="text/css">
+      .button,
+      button,
+      input[type="button"],
+      input[type="reset"],
+      input[type="submit"],
+      .pagination li a:hover,
+      .pagination li.active a {
+        background-color: #dd8500;
+      }
+
+      ::-moz-selection {
+        background-color: #dd8500;
+      }
+
+      ::selection {
+        background-color: #dd8500;
+      }
+
+      a,
+      .icon,
+      .button.minimal,
+      .button.white,
+      .pricing-table .plan h3,
+      .button.minimal,
+      .button.white,
+      .genesis-nav-menu li a:hover,
+      .genesis-nav-menu .menu-item a:hover,
+      .genesis-nav-menu .current-menu-item > a,
+      .genesis-nav-menu .sub-menu .current-menu-item > a:hover,
+      .front-page .front-page-6 .widgettitle {
+        color: #dd8500;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #dd8500;
+      }
+    </style>
+    <style id="wp-emoji-styles-inline-css" type="text/css">
+      img.wp-smiley,
+      img.emoji {
+        display: inline !important;
+        border: none !important;
+        box-shadow: none !important;
+        height: 1em !important;
+        width: 1em !important;
+        margin: 0 0.07em !important;
+        vertical-align: -0.1em !important;
+        background: none !important;
+        padding: 0 !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="wp-block-library-css"
+      href="https://pastorgetaways.com/wp-includes/css/dist/block-library/style.min.css?ver=6.7.1"
+      type="text/css"
+      media="all"
+    />
+    <style id="classic-theme-styles-inline-css" type="text/css">
+      /*! This file is auto-generated */
+      .wp-block-button__link {
+        color: #fff;
+        background-color: #32373c;
+        border-radius: 9999px;
+        box-shadow: none;
+        text-decoration: none;
+        padding: calc(0.667em + 2px) calc(1.333em + 2px);
+        font-size: 1.125em;
+      }
+      .wp-block-file__button {
+        background: #32373c;
+        color: #fff;
+        text-decoration: none;
+      }
+    </style>
+    <style id="global-styles-inline-css" type="text/css">
+      :root {
+        --wp--preset--aspect-ratio--square: 1;
+        --wp--preset--aspect-ratio--4-3: 4/3;
+        --wp--preset--aspect-ratio--3-4: 3/4;
+        --wp--preset--aspect-ratio--3-2: 3/2;
+        --wp--preset--aspect-ratio--2-3: 2/3;
+        --wp--preset--aspect-ratio--16-9: 16/9;
+        --wp--preset--aspect-ratio--9-16: 9/16;
+        --wp--preset--color--black: #000000;
+        --wp--preset--color--cyan-bluish-gray: #abb8c3;
+        --wp--preset--color--white: #ffffff;
+        --wp--preset--color--pale-pink: #f78da7;
+        --wp--preset--color--vivid-red: #cf2e2e;
+        --wp--preset--color--luminous-vivid-orange: #ff6900;
+        --wp--preset--color--luminous-vivid-amber: #fcb900;
+        --wp--preset--color--light-green-cyan: #7bdcb5;
+        --wp--preset--color--vivid-green-cyan: #00d084;
+        --wp--preset--color--pale-cyan-blue: #8ed1fc;
+        --wp--preset--color--vivid-cyan-blue: #0693e3;
+        --wp--preset--color--vivid-purple: #9b51e0;
+        --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(
+          135deg,
+          rgba(6, 147, 227, 1) 0%,
+          rgb(155, 81, 224) 100%
+        );
+        --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(
+          135deg,
+          rgb(122, 220, 180) 0%,
+          rgb(0, 208, 130) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(
+          135deg,
+          rgba(252, 185, 0, 1) 0%,
+          rgba(255, 105, 0, 1) 100%
+        );
+        --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(
+          135deg,
+          rgba(255, 105, 0, 1) 0%,
+          rgb(207, 46, 46) 100%
+        );
+        --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(
+          135deg,
+          rgb(238, 238, 238) 0%,
+          rgb(169, 184, 195) 100%
+        );
+        --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(
+          135deg,
+          rgb(74, 234, 220) 0%,
+          rgb(151, 120, 209) 20%,
+          rgb(207, 42, 186) 40%,
+          rgb(238, 44, 130) 60%,
+          rgb(251, 105, 98) 80%,
+          rgb(254, 248, 76) 100%
+        );
+        --wp--preset--gradient--blush-light-purple: linear-gradient(
+          135deg,
+          rgb(255, 206, 236) 0%,
+          rgb(152, 150, 240) 100%
+        );
+        --wp--preset--gradient--blush-bordeaux: linear-gradient(
+          135deg,
+          rgb(254, 205, 165) 0%,
+          rgb(254, 45, 45) 50%,
+          rgb(107, 0, 62) 100%
+        );
+        --wp--preset--gradient--luminous-dusk: linear-gradient(
+          135deg,
+          rgb(255, 203, 112) 0%,
+          rgb(199, 81, 192) 50%,
+          rgb(65, 88, 208) 100%
+        );
+        --wp--preset--gradient--pale-ocean: linear-gradient(
+          135deg,
+          rgb(255, 245, 203) 0%,
+          rgb(182, 227, 212) 50%,
+          rgb(51, 167, 181) 100%
+        );
+        --wp--preset--gradient--electric-grass: linear-gradient(
+          135deg,
+          rgb(202, 248, 128) 0%,
+          rgb(113, 206, 126) 100%
+        );
+        --wp--preset--gradient--midnight: linear-gradient(
+          135deg,
+          rgb(2, 3, 129) 0%,
+          rgb(40, 116, 252) 100%
+        );
+        --wp--preset--font-size--small: 13px;
+        --wp--preset--font-size--medium: 20px;
+        --wp--preset--font-size--large: 36px;
+        --wp--preset--font-size--x-large: 42px;
+        --wp--preset--spacing--20: 0.44rem;
+        --wp--preset--spacing--30: 0.67rem;
+        --wp--preset--spacing--40: 1rem;
+        --wp--preset--spacing--50: 1.5rem;
+        --wp--preset--spacing--60: 2.25rem;
+        --wp--preset--spacing--70: 3.38rem;
+        --wp--preset--spacing--80: 5.06rem;
+        --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+        --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
+          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+      }
+      :where(.is-layout-flex) {
+        gap: 0.5em;
+      }
+      :where(.is-layout-grid) {
+        gap: 0.5em;
+      }
+      body .is-layout-flex {
+        display: flex;
+      }
+      .is-layout-flex {
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .is-layout-flex > :is(*, div) {
+        margin: 0;
+      }
+      body .is-layout-grid {
+        display: grid;
+      }
+      .is-layout-grid > :is(*, div) {
+        margin: 0;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      .has-black-color {
+        color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-color {
+        color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-color {
+        color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-color {
+        color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-color {
+        color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-color {
+        color: var(--wp--preset--color--luminous-vivid-orange) !important;
+      }
+      .has-luminous-vivid-amber-color {
+        color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-color {
+        color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-color {
+        color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-color {
+        color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-color {
+        color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-color {
+        color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-background-color {
+        background-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-background-color {
+        background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-background-color {
+        background-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-background-color {
+        background-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-background-color {
+        background-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-background-color {
+        background-color: var(
+          --wp--preset--color--luminous-vivid-amber
+        ) !important;
+      }
+      .has-light-green-cyan-background-color {
+        background-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-background-color {
+        background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-background-color {
+        background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-background-color {
+        background-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-black-border-color {
+        border-color: var(--wp--preset--color--black) !important;
+      }
+      .has-cyan-bluish-gray-border-color {
+        border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+      }
+      .has-white-border-color {
+        border-color: var(--wp--preset--color--white) !important;
+      }
+      .has-pale-pink-border-color {
+        border-color: var(--wp--preset--color--pale-pink) !important;
+      }
+      .has-vivid-red-border-color {
+        border-color: var(--wp--preset--color--vivid-red) !important;
+      }
+      .has-luminous-vivid-orange-border-color {
+        border-color: var(
+          --wp--preset--color--luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-amber-border-color {
+        border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+      }
+      .has-light-green-cyan-border-color {
+        border-color: var(--wp--preset--color--light-green-cyan) !important;
+      }
+      .has-vivid-green-cyan-border-color {
+        border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+      }
+      .has-pale-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+      }
+      .has-vivid-cyan-blue-border-color {
+        border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+      }
+      .has-vivid-purple-border-color {
+        border-color: var(--wp--preset--color--vivid-purple) !important;
+      }
+      .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+        background: var(
+          --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple
+        ) !important;
+      }
+      .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+        background: var(
+          --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan
+        ) !important;
+      }
+      .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange
+        ) !important;
+      }
+      .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+        background: var(
+          --wp--preset--gradient--luminous-vivid-orange-to-vivid-red
+        ) !important;
+      }
+      .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+        background: var(
+          --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray
+        ) !important;
+      }
+      .has-cool-to-warm-spectrum-gradient-background {
+        background: var(
+          --wp--preset--gradient--cool-to-warm-spectrum
+        ) !important;
+      }
+      .has-blush-light-purple-gradient-background {
+        background: var(--wp--preset--gradient--blush-light-purple) !important;
+      }
+      .has-blush-bordeaux-gradient-background {
+        background: var(--wp--preset--gradient--blush-bordeaux) !important;
+      }
+      .has-luminous-dusk-gradient-background {
+        background: var(--wp--preset--gradient--luminous-dusk) !important;
+      }
+      .has-pale-ocean-gradient-background {
+        background: var(--wp--preset--gradient--pale-ocean) !important;
+      }
+      .has-electric-grass-gradient-background {
+        background: var(--wp--preset--gradient--electric-grass) !important;
+      }
+      .has-midnight-gradient-background {
+        background: var(--wp--preset--gradient--midnight) !important;
+      }
+      .has-small-font-size {
+        font-size: var(--wp--preset--font-size--small) !important;
+      }
+      .has-medium-font-size {
+        font-size: var(--wp--preset--font-size--medium) !important;
+      }
+      .has-large-font-size {
+        font-size: var(--wp--preset--font-size--large) !important;
+      }
+      .has-x-large-font-size {
+        font-size: var(--wp--preset--font-size--x-large) !important;
+      }
+      :where(.wp-block-post-template.is-layout-flex) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-post-template.is-layout-grid) {
+        gap: 1.25em;
+      }
+      :where(.wp-block-columns.is-layout-flex) {
+        gap: 2em;
+      }
+      :where(.wp-block-columns.is-layout-grid) {
+        gap: 2em;
+      }
+      :root :where(.wp-block-pullquote) {
+        font-size: 1.5em;
+        line-height: 1.6;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      id="google-fonts-css"
+      href="//fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%7CMartel%3A200%2C700%2C900%7CRoboto+Condensed%3A700&#038;ver=1.0.1"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="ionicons-css"
+      href="//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css?ver=1.0.1"
+      type="text/css"
+      media="all"
+    />
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+      id="jquery-migrate-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/maker-pro/js/jquery.fitvids.js?ver=1.0.1"
+      id="maker-fitvids-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/maker-pro/js/global.js?ver=1.0.1"
+      id="maker-global-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/maker-pro/js/responsive-menu.js?ver=1.0.1"
+      id="maker-responsive-menu-js"
+    ></script>
+
     <link
       rel="icon"
       href="https://pastorgetaways.com/wp-content/uploads/2021/11/favicon-150x150.png"
@@ -26,241 +484,427 @@
       rel="apple-touch-icon"
       href="https://pastorgetaways.com/wp-content/uploads/2021/11/favicon-300x300.png"
     />
+    <meta
+      name="msapplication-TileImage"
+      content="https://pastorgetaways.com/wp-content/uploads/2021/11/favicon-300x300.png"
+    />
+    <style type="text/css" id="wp-custom-css">
+      .site-header {
+        background: url("http://pastorgetaways.com/wp-content/uploads/2021/08/pexels-visually-us-2294125.jpeg")
+          no-repeat center center;
+        background-size: cover;
+        padding-top: 125px;
+        padding-bottom: 125px;
+        position: relative !important;
+        overflow: hidden;
+      }
+
+      .site-header:before {
+        content: "";
+        width: 100%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+      }
+
+      .title-area {
+        text-align: center;
+        float: none !important;
+      }
+
+      .site-title {
+        font-family: "Roboto Condensed";
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 60px;
+        position: relative;
+        z-index: 1;
+      }
+      .site-title a {
+        color: #fff;
+      }
+
+      .site-description {
+        color: #fff;
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+      }
+
+      .nav-primary {
+        width: 100%;
+        text-align: right;
+        float: none;
+        position: absolute;
+        bottom: 0px;
+        right: 50px;
+      }
+
+      .nav-primary a {
+        background-color: #fff;
+        padding-right: 15px !important;
+        padding-left: 15px !important;
+        margin-left: 0px !important;
+      }
+
+      .menu-toggle:before {
+        color: #fff;
+      }
+      @media screen and (max-width: 800px) {
+        .site-header {
+          padding-top: 50px;
+          padding-bottom: 50px;
+        }
+        .site-title {
+          font-size: 40px;
+        }
+        .nav-primary {
+          position: relative;
+          right: auto;
+          bottom: auto;
+          text-align: center;
+        }
+        .menu-toggle {
+        }
+        .getaway-contact-info {
+          display: block;
+        }
+        .site-description {
+          font-size: 16px;
+        }
+      }
+
+      @media only screen and (min-width: 1024px) {
+        h1 {
+          font-size: 40px;
+        }
+        .gateway-contact-title {
+          font-size: 30px;
+        }
+        .archive-title {
+          font-size: 50px;
+        }
+      }
+
+      .quoted {
+        font-weight: bold;
+        display: block;
+        line-height: 25px;
+      }
+
+      .quoted-author {
+        font-weight: bold;
+        font-style: italic;
+        margin-top: -3px;
+        padding-bottom: 10px;
+      }
+
+      .quoted-author-title {
+        font-weight: normal;
+        font-style: italic;
+        display: inline;
+        padding-bottom: 5px;
+      }
+      .recommendations {
+        text-align: left !important;
+        padding-right: 10px;
+      }
+
+      .responsive-image {
+        transform: scale(0.75);
+        width: 100%; /* This ensures the image never exceeds its container's width */
+        height: auto; /* This maintains the aspect ratio */
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+
+      section {
+        content: ""; /* Optional, if you want to replace default content */
+        display: block; /* Ensure it acts as a block */
+        margin-bottom: 10px; /* Optional spacing */
+      }
+      .highlight {
+        /* Basic styling */
+        font-size: 24px;
+        line-height: 1.5;
+        padding: 10px;
+
+        /* Background for depth */
+        background: #f9f9f9; /* Light grey to give a sense of elevation */
+
+        /* Text shadow for 3D effect */
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1),
+          /* Light shadow for the front */ -1px -1px 1px
+            rgba(255, 255, 255, 0.5); /* Light highlight for the back */
+
+        /* Box shadow for lift */
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          /* Base shadow */ 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Additional for depth */
+
+        /* Transform for a slight tilt */
+        transform: perspective(500px) rotateX(3deg);
+
+        /* Transition for smooth fade-in if desired */
+        transition: opacity 0.5s ease-in-out;
+
+        /* Fade effect */
+        opacity: 0.9; /* Slightly transparent to help with the 3D illusion */
+      }
+
+
+      #main {
+        ul{
+          padding-left:2rem;
+        }
+        ul li {
+          list-style: disc;
+        }
+
+
+
+      article {
+        display: inline-block;
+      }
+    </style>
   </head>
-  <body>
-    <!-- Wrapper -->
-    <div id="wrapper">
-      <!-- Intro -->
-
-      <img src="images/Thrive.png" class="responsive-image" />
-
-      <!-- Nav -->
-      <nav id="nav">
-        <ul class="links">
-          <li class="active"><a href="#" data-target="main">Thrive</a></li>
-          <li><a href="#" data-target="blog">Blog</a></li>
-          <li><a href="#" data-target="resources">Resources</a></li>
-          <li><a href="#" data-target="admin">Admin</a></li>
-        </ul>
-      </nav>
-
-      <!-- Main -->
-      <div id="main" class="nav-content">
-        <section class="posts">
-          <!-- Featured Post -->
-          <article class="post featured">
-            <header class="major">
-              <div style="float: left; width: 50%">
-                <h3>The need is great:</h3>
-                <ul style="text-align: left">
-                  <li>
-                    42% of pastors considered quitting over the past year*
-                  </li>
-                  <li>71% feel they are on call 24/7**</li>
-                  <li>63% say the role is overwhelming**</li>
-                  <li>38% say they feel isolated**</li>
-                  <li>31% say the demands keep them from their family**</li>
-                </ul>
-              </div>
-              <div style="float: left; width: 50%">
-                <h3>Thrive in Ministry provides:</h3>
-                <ul style="text-align: left">
-                  <li>Ministry coaching for pastors</li>
-                  <li>Counseling for pastors and families</li>
-                  <li>Revitalization coaching for churches</li>
-                  <li>R&R getaways for pastors and families</li>
-                </ul>
-              </div>
-            </header>
-            <div class="caveats" style="clear: both">
-              *Barna Research Group www.barna.com **Pastor Attrition Study 2021
-              by Lifeway Research
-            </div>
-          </article>
-          <article class="post featured green-highlight">
-            <p>
-              Pastors have the most important job to care for the souls of
-              America. But who is caring for the pastors? At Thrive, we provide
-              care, coaching, and counseling so pastors, their families, and
-              churches are stronger, for the glory of God and the good of our
-              country.
+  <body
+    class="home blog custom-header header-full-width sidebar-content genesis-breadcrumbs-hidden genesis-footer-widgets-hidden"
+  >
+    <div class="site-container">
+      <!-- <ul class="genesis-skip-link">
+        <li>
+          <a href="#genesis-nav-primary" class="screen-reader-shortcut">
+            Skip to primary navigation</a
+          >
+        </li>
+        <li>
+          <a href="#genesis-content" class="screen-reader-shortcut">
+            Skip to main content</a
+          >
+        </li>
+        <li>
+          <a href="#genesis-sidebar-primary" class="screen-reader-shortcut">
+            Skip to primary sidebar</a
+          >
+        </li>
+      </ul> -->
+      <header class="site-header">
+        <div class="wrap">
+          <div class="title-area">
+            <h1 class="site-title">
+              <a href="./index.html">Thrive</a>
+            </h1>
+            <p class="site-description">
+              Churches &bull; Pastors &bull; Families
             </p>
-          </article>
-          <article class="post featured">
-            <h3>How the Newmans are equipped to help:</h3>
-            <header class="major" style="float: left; width: 60%">
-              <ul style="text-align: left">
-                <li>26 years in church planting and pastoral ministry</li>
-                <li>20 years of marriage and family counseling</li>
-                <li>
-                  Certified counselor with Association of Certified Biblical
-                  Counselors
-                </li>
-                <li>Certified leadership coach with CORPUS Vitae</li>
-              </ul>
-            </header>
-
-            <img
-              src="images/newmans.jpg"
-              alt=""
-              style="float: right; width: 40%"
-            />
-          </article>
-        </section>
-
-        <section class="posts">
-          <article class="post recommendations">
-            <div class="quoted">
-              “I highly recommend Thrive to pastors and their wives. I have
-              witnessed Johnathan and Jeni’s faithfulness to God’s word and to
-              caring for leaders. They are held in highest regard by the
-              churches of the Greater Dayton Association of Baptists.”
-            </div>
-            <div class="quoted-author">
-              Dr. James Risner,
-              <div class="quoted-author-title">
-                Associational Missionary for the Greater Dayton Association of
-                Baptists
-              </div>
-            </div>
-
-            <div class="quoted">
-              “I’ve had many conversations with Johnathan discussing pastoral
-              work. I am happy to commend him, and his wife Jeni, to serve
-              pastors and churches. What a gift to the churches in the Dayton
-              area and beyond to build up their pastors!”
-            </div>
-            <div class="quoted-author">
-              Phil A. Newton, Ph.D.,
-              <div class="quoted-author-title">
-                Director of Pastoral Care for the Pillar Network, author of 40
-                Questions About Pastoral Ministry
-              </div>
-            </div>
-
-            <div class="quoted">
-              “I have seen firsthand the strategic leadership and biblical
-              ministry of Johnathan and Jeni Newman. Their warmth and wisdom
-              will encourage any pastors or churches fortunate enough to receive
-              their insights. I am grateful that they are helping pastors and
-              their families rediscover the comfort of Scripture so they can
-              thrive in service to Christ.”
-            </div>
-            <div class="quoted-author">
-              Hershael W. York,
-              <div class="quoted-author-title">
-                Professor of Preaching and Dean of the School of Theology at The
-                Southern Baptist Theological Seminary
-              </div>
-            </div>
-          </article>
-        </section>
-      </div>
-
-      <!-- Blog -->
-      <div id="blog" class="nav-content" style="display: none">
-        <section class="posts">
-          <!-- Featured Post -->
-          <article class="post featured">
-            <header class="major">Blog section</header>
-          </article>
-        </section>
-      </div>
-
-      <!-- References -->
-      <div id="resources" class="nav-content" style="display: none">
-        <section class="posts">
-          <article class="post featured">
-            <header class="major">Resources section</header>
-          </article>
-        </section>
-      </div>
-
-      <!-- Admin -->
-      <div id="admin" class="nav-content" style="display: none">
-        <section class="posts">
-          <article class="post featured">
-            <header class="major">Admin section</header>
-          </article>
-        </section>
-      </div>
-
-      <!-- Footer -->
-      <!-- <footer id="footer">
-        <section>
-          <form method="post" action="#">
-            <div class="fields">
-              <div class="field">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" />
-              </div>
-              <div class="field">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" />
-              </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="3"></textarea>
-              </div>
-            </div>
-            <ul class="actions">
-              <li><input type="submit" value="Send Message" /></li>
-            </ul>
-          </form>
-        </section>
-        <section class="split contact">
-          <section class="alt">
-            <h3>Address</h3>
-            <p>
-              1234 Somewhere Road #87257<br />
-              Nashville, TN 00000-0000
-            </p>
-          </section>
-          <section>
-            <h3>Phone</h3>
-            <p><a href="#">(000) 000-0000</a></p>
-          </section>
-          <section>
-            <h3>Email</h3>
-            <p><a href="#">info@untitled.tld</a></p>
-          </section>
-          <section>
-            <h3>Social</h3>
-            <ul class="icons alt">
-              <li>
-                <a href="#" class="icon brands alt fa-twitter"
-                  ><span class="label">Twitter</span></a
-                >
+          </div>
+          <nav class="nav-primary" aria-label="Main" id="genesis-nav-primary">
+            <ul
+              id="menu-menu-1"
+              class="menu genesis-nav-menu menu-primary js-superfish"
+            >
+              <li
+                id="menu-item-162"
+                class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-162"
+              >
+                <a href="#" data-target="main">Thrive</a>
               </li>
-              <li>
-                <a href="#" class="icon brands alt fa-facebook-f"
-                  ><span class="label">Facebook</span></a
-                >
+              <li
+                id="menu-item-177"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+              >
+                <a href="#" data-target="blog">Blog</a>
               </li>
-              <li>
-                <a href="#" class="icon brands alt fa-instagram"
-                  ><span class="label">Instagram</span></a
-                >
+              <li
+                id="menu-item-177"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+              >
+                <a href="#" data-target="resources">Resources</a>
               </li>
-              <li>
-                <a href="#" class="icon brands alt fa-github"
-                  ><span class="label">GitHub</span></a
-                >
+              <li
+                id="menu-item-177"
+                class="menu-item menu-item-type-post_type menu-item-object-page menu-item-177"
+              >
+                <a href="#" data-target="admin">Admin</a>
               </li>
             </ul>
-          </section>
-        </section>
-      </footer> -->
+          </nav>
+        </div>
+      </header>
+      <div class="site-inner">
+        <div class="wrap">
+          <div id="main" class="nav-content content-sidebar-wrap">
+            <main id="genesis-content">
+              <section class="posts">
+                <!-- Featured Post -->
+                <article class="post featured">
+                  <header class="major">
+                    <div style="float: left; width: 45%">
+                      <h2 class="entry-title">The need is great:</h2>
+                      <ul style="text-align: left">
+                        <li>
+                          42% of pastors considered quitting over the past year*
+                        </li>
+                        <li>71% feel they are on call 24/7**</li>
+                        <li>63% say the role is overwhelming**</li>
+                        <li>38% say they feel isolated**</li>
+                        <li>
+                          31% say the demands keep them from their family**
+                        </li>
+                      </ul>
+                    </div>
+                    <div style="float: left; width: 55%">
+                      <h2 class="entry-title">Thrive in Ministry provides:</h2>
+                      <ul style="text-align: left">
+                        <li>Ministry coaching for pastors</li>
+                        <li>Counseling for pastors and families</li>
+                        <li>Revitalization coaching for churches</li>
+                        <li>R&R getaways for pastors and families</li>
+                      </ul>
+                    </div>
+                  </header>
+                </article>
+              </section>
+              <section>
+                <article class="post featured">
+                  <p class="highlight">
+                    Pastors have the most important job to care for the souls of
+                    America. But who is caring for the pastors? At Thrive, we
+                    provide care, coaching, and counseling so pastors, their
+                    families, and churches are stronger, for the glory of God
+                    and the good of our country.
+                  </p>
+                </article>
+              </section>
+              <section>
+                <article class="post featured">
+                  <h2 class="entry-title">
+                    How the Newmans are equipped to help:
+                  </h2>
 
-      <!-- Copyright -->
-      <div id="copyright">
-        <ul>
-          <li>&copy; Untitled</li>
-          <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-        </ul>
+                  <div style="text-align: left; float: left; width: 60%">
+                    <ul style="padding-bottom: 1rem">
+                      <li>26 years in church planting and pastoral ministry</li>
+                      <li>20 years of marriage and family counseling</li>
+                      <li>
+                        Certified counselor with Association of Certified
+                        Biblical Counselors
+                      </li>
+                      <li>Certified leadership coach with CORPUS Vitae</li>
+                    </ul>
+
+                    <div class="recommendations">
+                      <div class="quoted">
+                        “I highly recommend Thrive to pastors and their wives. I
+                        have witnessed Johnathan and Jeni’s faithfulness to
+                        God’s word and to caring for leaders. They are held in
+                        highest regard by the churches of the Greater Dayton
+                        Association of Baptists.”
+                      </div>
+                      <div class="quoted-author">
+                        Dr. James Risner,
+                        <div class="quoted-author-title">
+                          Associational Missionary for the Greater Dayton
+                          Association of Baptists
+                        </div>
+                      </div>
+
+                      <div class="quoted">
+                        “I’ve had many conversations with Johnathan discussing
+                        pastoral work. I am happy to commend him, and his wife
+                        Jeni, to serve pastors and churches. What a gift to the
+                        churches in the Dayton area and beyond to build up their
+                        pastors!”
+                      </div>
+                      <div class="quoted-author">
+                        Phil A. Newton, Ph.D.,
+                        <div class="quoted-author-title">
+                          Director of Pastoral Care for the Pillar Network,
+                          author of 40 Questions About Pastoral Ministry
+                        </div>
+                      </div>
+
+                      <div class="quoted">
+                        “I have seen firsthand the strategic leadership and
+                        biblical ministry of Johnathan and Jeni Newman. Their
+                        warmth and wisdom will encourage any pastors or churches
+                        fortunate enough to receive their insights. I am
+                        grateful that they are helping pastors and their
+                        families rediscover the comfort of Scripture so they can
+                        thrive in service to Christ.”
+                      </div>
+                      <div class="quoted-author">
+                        Hershael W. York,
+                        <div class="quoted-author-title">
+                          Professor of Preaching and Dean of the School of
+                          Theology at The Southern Baptist Theological Seminary
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/newmans.jpg"
+                    alt=""
+                    style="float: right; width: 40%"
+                  />
+                </article>
+              </section>
+            </main>
+          </div>
+          <!-- Blog -->
+          <div id="blog" class="nav-content" style="display: none">
+            <section class="posts">
+              <!-- Featured Post -->
+              <article class="post featured">
+                <header class="major">Blog section</header>
+              </article>
+            </section>
+          </div>
+
+          <!-- References -->
+          <div id="resources" class="nav-content" style="display: none">
+            <section class="posts">
+              <article class="post featured">
+                <header class="major">Resources section</header>
+              </article>
+            </section>
+          </div>
+
+          <!-- Admin -->
+          <div id="admin" class="nav-content" style="display: none">
+            <section class="posts">
+              <article class="post featured">
+                <header class="major">Admin section</header>
+              </article>
+            </section>
+          </div>
+        </div>
       </div>
+      <footer class="site-footer">
+        <div class="wrap">
+          <p>
+            Copyright &#x000A9;&nbsp;2024 Thrive<br />
+            <small
+              >The organizations and individuals described provide specific
+              ministries to pastors and their families. They are listed to guide
+              you to those who might provide any encouragement, renewal or
+              restoration you may need. While we have taken great care in the
+              evaluation and selection of these ministries, we do not
+              necessarily endorse the views that may be expressed by them.
+            </small>
+          </p>
+        </div>
+        <div class="caveats" style="clear: both">
+          *Barna Research Group www.barna.com **Pastor Attrition Study 2021 by
+          Lifeway Research
+        </div>
+      </footer>
     </div>
-
     <script>
       document.querySelectorAll("nav ul li a").forEach((link) => {
         link.addEventListener("click", function (e) {
@@ -281,14 +925,25 @@
         });
       });
     </script>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2"
+      id="hoverIntent-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/genesis/lib/js/menu/superfish.min.js?ver=1.7.10"
+      id="superfish-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/genesis/lib/js/menu/superfish.args.min.js?ver=3.4.0"
+      id="superfish-args-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://pastorgetaways.com/wp-content/themes/genesis/lib/js/skip-links.min.js?ver=3.4.0"
+      id="skip-links-js"
+    ></script>
   </body>
 </html>
