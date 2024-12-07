@@ -3935,6 +3935,8 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 .responsive-image {
   width: 100%; /* This ensures the image never exceeds its container's width */
   height: auto; /* This maintains the aspect ratio */
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 #main > .post {
