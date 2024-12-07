@@ -3831,6 +3831,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   margin-bottom: 0;
   padding-left: 0;
   text-transform: uppercase;
+  justify-content: flex-end;
 }
 
 #nav ul.links li {
