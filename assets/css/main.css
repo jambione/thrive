@@ -236,7 +236,7 @@ body,
 input,
 select,
 textarea {
-  font-family: "Merriweather", Georgia, serif;
+  font-family: "Roboto Condensed", Georgia, serif;
   font-weight: 300;
   font-size: 1rem;
   line-height: 2.375;
@@ -280,7 +280,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
@@ -2182,7 +2182,7 @@ button,
   border-radius: 0;
   cursor: pointer;
   display: inline-block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -2414,7 +2414,7 @@ form > .fields > .field.quarter {
 
 label {
   display: block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: 0.075em;
@@ -3123,7 +3123,7 @@ table td {
 }
 
 table th {
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -3229,7 +3229,7 @@ table.alt tbody tr td {
     box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
   border: solid 2px;
   display: inline-block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 900;
   height: 3rem;
@@ -3333,18 +3333,17 @@ table.alt tbody tr td {
   position: relative;
   z-index: 1;
   overflow: hidden;
+  background-color: white;
+  padding: 8rem 8rem 6rem 8rem;
 }
 
 #wrapper > .bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 95%;
   height: 100%;
-  background-color: #212931;
-  background-image: url("../../images/overlay.png"),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url("../../images/bg.jpg");
+  background-color: white;
   background-size: auto, auto, 100% auto;
   background-position: center, center, top center;
   background-repeat: repeat, no-repeat, no-repeat;
@@ -3388,6 +3387,9 @@ body.is-preload #wrapper.fade-in:before {
 @media screen and (orientation: portrait) {
   #wrapper > .bg {
     background-size: auto, auto, auto 175%;
+  }
+  #wrapper {
+    padding: 0;
   }
 }
 
@@ -3693,7 +3695,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   border-style: solid;
   border-color: #ffffff;
   border-width: 5px !important;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 2.25rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -3739,13 +3741,13 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
   background: rgba(255, 255, 255, 0.175);
-  height: 4rem;
-  line-height: 4rem;
+  height: 3rem;
+  line-height: 3rem;
   margin: -4rem auto 0 auto;
   overflow: hidden;
   padding: 0 2rem 0 0;
   position: relative;
-  width: calc(100% - 4rem);
+  width: calc(100% - 30rem);
   max-width: 72rem;
   z-index: 2;
 }
@@ -3822,7 +3824,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   -webkit-flex-shrink: 1;
   -ms-flex-shrink: 1;
   flex-shrink: 1;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-weight: 900;
   letter-spacing: 0.075em;
   list-style: none;
@@ -3886,7 +3888,6 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 
 #main {
   background-color: #ffffff;
-  position: relative;
   margin: 0 auto;
   width: calc(100% - 4rem);
   max-width: 72rem;
@@ -3910,27 +3911,30 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 .quoted {
   font-weight: bold;
   display: block;
+  line-height: 25px;
 }
 
 .quoted-author {
   font-weight: bold;
   font-style: italic;
   text-align: center !important;
+  margin-top: -10px;
+  padding-bottom: 10px;
 }
 
 .quoted-author-title {
   font-weight: normal;
   font-style: italic;
   display: inline;
+  padding-bottom: 5px;
 }
 .recommendations {
   text-align: left !important;
 }
 
 .responsive-image {
-  max-width: 100%; /* This ensures the image never exceeds its container's width */
+  width: 100%; /* This ensures the image never exceeds its container's width */
   height: auto; /* This maintains the aspect ratio */
-  display: block; /* This removes any space below the image that's due to it being an inline-block element */
 }
 
 #main > .post {
@@ -4015,14 +4019,19 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > .posts-fullwidth > * {
-  padding: 4rem;
+  padding: 0.5rem;
   width: 100%;
   border-bottom: #b3b7bb 1px solid;
 }
 
 #main > .posts > * {
-  padding: 4rem;
+  padding: 0.5rem;
   width: 100%;
+}
+
+.green-highlight {
+  background-color: #294329;
+  color: white;
 }
 
 #main > .posts > article {
@@ -4547,7 +4556,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   position: relative;
   color: rgba(255, 255, 255, 0.25);
   cursor: default;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.8rem;
   font-weight: 900;
   letter-spacing: 0.075em;
@@ -4666,13 +4675,14 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   right: 0.75rem;
   border: 0;
   color: #ffffff;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.9rem;
   font-weight: 900;
   letter-spacing: 0.075em;
   padding: 0.375rem 1.25rem;
   text-transform: uppercase;
   z-index: 10001;
+  background: #294329;
 }
 
 #navPanelToggle:before {
@@ -4757,7 +4767,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 #navPanel .links li a {
   border-bottom: 0;
   display: block;
-  font-family: "Source Sans Pro", Helvetica, sans-serif;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
   font-size: 0.9rem;
   font-size: 0.9rem;
   font-weight: 900;
