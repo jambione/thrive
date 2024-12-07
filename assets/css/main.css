@@ -3743,7 +3743,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   background: rgba(255, 255, 255, 0.175);
   height: 2rem;
   line-height: 2rem;
-  margin: -6.25rem auto 0 auto;
+  margin: -6.7rem auto 0 auto;
   overflow: hidden;
   padding: 0 2rem 0 0;
   position: relative;
